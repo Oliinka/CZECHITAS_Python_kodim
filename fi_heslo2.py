@@ -14,3 +14,4 @@ if zamitnuty_vstup==True:
     print("Vstup zakázán.")
 else:
     print("Vstup povolen.")
+
