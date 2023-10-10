@@ -13,6 +13,7 @@ hry = [
     ["Růžová nemoc", 210],
     ["Smrt v přímém přenosu", 265],
 ]
+
 print("""
 Pomocí cyklu projděte tento seznam 
 a vypište na výstup názvy všech her:
@@ -21,10 +22,12 @@ print(f"Pocet polozek v seznamu je: {len(hry)}", end = "\n\n")
 
 for nazev_hry in hry:
     print(nazev_hry[0])
+print("""
+----------------------------------------------------------------------""", end = "\n\n")
 
 print("""
 Vypište na výstup názvy všech her, 
-které trvají více než 120 minut:""", end = "\n")
+které trvají více než 120 minut:""", end = "\n\n")
 
 for nazev_hry in hry:
     delka_hry = nazev_hry[1] > 120
@@ -32,5 +35,11 @@ for nazev_hry in hry:
         print(nazev_hry[0])
     else:
         pass
-
+print("""
+----------------------------------------------------------------------""", end = "\n\n")
 # Vypište na výstup názvy všech her spolu s jejich trváním v hodinách a minutách.
+
+for nazev_hry in hry:
+    hodiny = int(nazev_hry[1]/60)
+    minuty = nazev_hry[1]%60
+    print(f"Hra s nazvem {nazev_hry[0]} trva {hodiny}h {minuty}min.")
