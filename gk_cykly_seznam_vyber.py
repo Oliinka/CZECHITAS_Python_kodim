@@ -15,14 +15,16 @@ hry = [
 ]
 print("""
 Pomocí cyklu projděte tento seznam 
-a vypište na výstup názvy všech her.
-""")
+a vypište na výstup názvy všech her:
+""", end = "\n\n")
+print(f"Pocet polozek v seznamu je: {len(hry)}", end = "\n\n")
+
 for nazev_hry in hry:
     print(nazev_hry[0])
 
 print("""
 Vypište na výstup názvy všech her, 
-které trvají více než 120 minut.""")
+které trvají více než 120 minut:""", end = "\n")
 
 for nazev_hry in hry:
     delka_hry = nazev_hry[1] > 120
