@@ -15,4 +15,3 @@ print(jmeno_divadla)
 retezec = ("1"*10 + "0"*10)
 print(retezec)
 print('bla ' * 10)
-
